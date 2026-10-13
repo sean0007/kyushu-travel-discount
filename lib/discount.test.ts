@@ -78,7 +78,9 @@ test("Kagoshima: not open before 2026-10-14, open from it, New Year excluded, di
   assert.equal(early.eligibility.verdict, "not_yet_open");
   assert.equal(early.eligibility.nextOpening?.date, "2026-10-14");
   assert.equal(calculateDiscount({ ...base, prefecture: "kagoshima", totalPriceJPY: 30000, checkIn: "2026-11-01", bookingDate: "2026-10-14" }).eligibility.verdict, "eligible");
-  assert.equal(calculateDiscount({ ...base, prefecture: "kagoshima", totalPriceJPY: 30000, checkIn: "2026-12-25", nights: 2, bookingDate: "2026-10-20" }).eligibility.verdict, "not_eligible");
+  const ny = calculateDiscount({ ...base, prefecture: "kagoshima", totalPriceJPY: 30000, checkIn: "2026-12-25", nights: 2, bookingDate: "2026-10-20" });
+  assert.equal(ny.eligibility.verdict, "not_eligible");
+  assert.ok(ny.warnings[0].includes("would not be discounted"));
   assert.equal(calculateDiscount({ ...base, prefecture: "kagoshima", totalPriceJPY: 30000, checkIn: "2027-01-04", bookingDate: "2026-10-20" }).eligibility.verdict, "eligible");
   assert.equal(calculateDiscount({ ...base, prefecture: "kagoshima", totalPriceJPY: 30000, checkIn: "2027-02-10", bookingDate: "2026-10-20" }).eligibility.verdict, "not_eligible");
   assert.equal(calculateDiscount({ ...base, prefecture: "kagoshima", channel: "direct", totalPriceJPY: 30000, checkIn: "2027-02-10", bookingDate: "2026-10-20" }).eligibility.verdict, "eligible");

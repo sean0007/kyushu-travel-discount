@@ -322,6 +322,8 @@ export function calculateDiscount(input: DiscountInput) {
     nights === 0
       ? { verdict: "not_eligible", reasons: ["At least 1 night is required."], nextOpening: null }
       : checkEligibility(rule, channel, nights, input.checkIn || null, bookingDate);
+  if (nights > 0 && eligibility.verdict !== "eligible" && eligibility.verdict !== "unchecked")
+    warnings.unshift("The discount figures show what an eligible booking would get. As entered (dates, booking date or channel), this booking would not be discounted.");
 
   return {
     prefecture: { id: rule.id, en: rule.en, ja: rule.ja, site: rule.site, callCenter: rule.callCenter },
