@@ -55,6 +55,7 @@ At least 1 night. Bookings made before the channel's sales start are never eligi
 - Japan Tax-Free Refund (Nov 2026 refund method): https://japan-tax-free-refund.vercel.app
 - Japan Luggage Check (Shinkansen + TA-Q-BIN): https://japan-luggage.vercel.app
 - Japan Visa Fee Calculator: https://japan-visa-fee.vercel.app
+- Japan Customs Allowance Checker (duty-free allowance on arrival in Japan): https://japan-customs-allowance.vercel.app
 - Free Agent Tools MCP: https://free-agent-tools.vercel.app
 
 Not affiliated with the Japan Tourism Agency, any prefecture, travel agency or booking site.
