@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Calculator } from "@/components/calculator";
 import { FaqSection, type FaqItem } from "@/components/faq-section";
 import { CHANNELS, CHANNEL_LABEL, PREFECTURES, PREFS, RULES_AS_OF, SOURCES, todayJst, upcomingOpenings } from "@/lib/discount";
-import { EXAMPLE_SHARED, PUBLIC_URL, resultPath } from "@/lib/share";
+import { EXAMPLE_SHARED, PUBLIC_URL, resultPath, type Shared } from "@/lib/share";
 
 export const revalidate = 3600;
 
@@ -105,6 +105,19 @@ export default function HomePage() {
   const openings = upcomingOpenings(today).slice(0, 6);
   const kagoshimaOpen = today >= "2026-10-14";
   const nextOpening = openings[0];
+  // On a sales-opening day, pre-fill the calculator for that prefecture/channel so visitors land on a live eligible example.
+  const openingDefault: Shared | undefined =
+    nextOpening && nextOpening.date === today
+      ? {
+          prefecture: nextOpening.prefecture,
+          product: "lodging",
+          nights: 2,
+          totalPriceJPY: 60000,
+          travelers: 2,
+          channel: nextOpening.channel,
+          checkIn: nextOpening.stayFrom,
+        }
+      : undefined;
   return (
     <div className="mx-auto w-full max-w-6xl px-4 py-8 sm:py-10">
       <section className="max-w-3xl">
@@ -126,7 +139,7 @@ export default function HomePage() {
       </section>
 
       <section className="mt-8">
-        <Calculator />
+        <Calculator initial={openingDefault} />
       </section>
 
       {openings.length > 0 && (
