@@ -56,6 +56,7 @@ At least 1 night. Bookings made before the channel's sales start are never eligi
 - Japan Luggage Check (Shinkansen + TA-Q-BIN): https://japan-luggage.vercel.app
 - Japan Visa Fee Calculator: https://japan-visa-fee.vercel.app
 - Japan Customs Allowance Checker (duty-free allowance on arrival in Japan): https://japan-customs-allowance.vercel.app
+- Japan TB Screening Check (JPETS: do Philippine, Nepali, Vietnamese, Indonesian applicants need a TB Clearance Certificate for a COE/visa; Indonesia from 2027-01-04; keyless API): https://japan-tb-screening.vercel.app
 - Free Agent Tools MCP: https://free-agent-tools.vercel.app
 
 Not affiliated with the Japan Tourism Agency, any prefecture, travel agency or booking site.
