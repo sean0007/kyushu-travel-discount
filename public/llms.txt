@@ -57,6 +57,7 @@ At least 1 night. Bookings made before the channel's sales start are never eligi
 - Japan Visa Fee Calculator: https://japan-visa-fee.vercel.app
 - Japan Customs Allowance Checker (duty-free allowance on arrival in Japan): https://japan-customs-allowance.vercel.app
 - Japan TB Screening Check (JPETS: do Philippine, Nepali, Vietnamese, Indonesian applicants need a TB Clearance Certificate for a COE/visa; Indonesia from 2027-01-04; keyless API): https://japan-tb-screening.vercel.app
+- Japan Dual Pricing Check (二重価格: resident vs non-resident prices at Himeji Castle, Odawara Castle, Kagoshima, Kitakyushu, plus the planned Nijo Castle and Kyoto City Bus prices; keyless API): https://japan-dual-pricing.vercel.app
 - Free Agent Tools MCP: https://free-agent-tools.vercel.app
 
 Not affiliated with the Japan Tourism Agency, any prefecture, travel agency or booking site.
