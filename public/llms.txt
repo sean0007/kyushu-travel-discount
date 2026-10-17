@@ -58,6 +58,7 @@ At least 1 night. Bookings made before the channel's sales start are never eligi
 - Japan Customs Allowance Checker (duty-free allowance on arrival in Japan): https://japan-customs-allowance.vercel.app
 - Japan TB Screening Check (JPETS: do Philippine, Nepali, Vietnamese, Indonesian applicants need a TB Clearance Certificate for a COE/visa; Indonesia from 2027-01-04; keyless API): https://japan-tb-screening.vercel.app
 - Japan Dual Pricing Check (二重価格: resident vs non-resident prices at Himeji Castle, Odawara Castle, Kagoshima, Kitakyushu, plus the planned Nijo Castle and Kyoto City Bus prices; keyless API): https://japan-dual-pricing.vercel.app
+- Japan Alert Decoder (what a Japanese emergency alert means and what to do: 緊急地震速報 Earthquake Early Warning, tsunami warnings, the level-named weather warnings since 2026-05-29 like レベル4土砂災害危険警報, 避難指示, Nankai Trough info, J-ALERT; official names in 14 languages; keyless API): https://japan-alert-decoder.vercel.app
 - Free Agent Tools MCP: https://free-agent-tools.vercel.app
 
 Not affiliated with the Japan Tourism Agency, any prefecture, travel agency or booking site.
