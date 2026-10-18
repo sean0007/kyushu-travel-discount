@@ -18,6 +18,7 @@ export const SIBLING_TOOLS = [
   { href: "https://japan-tb-screening.vercel.app", label: "Japan TB Screening (JPETS)" },
   { href: "https://japan-dual-pricing.vercel.app", label: "Japan Dual Pricing" },
   { href: "https://japan-alert-decoder.vercel.app", label: "Japan Alert Decoder" },
+  { href: "https://japan-pr-check.vercel.app", label: "Japan PR Guideline Check" },
   { href: "https://pitch-roast.vercel.app", label: "Pitch Roast" },
   { href: "https://saas-bill-cutter.vercel.app", label: "SaaS Bill Cutter" },
   { href: "https://free-agent-tools.vercel.app", label: "Free Agent Tools MCP" },
