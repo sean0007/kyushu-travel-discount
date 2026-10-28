@@ -125,7 +125,7 @@ export default function HomePage() {
         <h1 className="mt-3 font-display text-4xl leading-[1.05] tracking-tight sm:text-6xl">Kyushu travel discount calculator: how much will you save?</h1>
         <p className="mt-4 max-w-2xl text-lg font-medium text-foreground sm:text-xl">50% off Kyushu stays, 60% in Kumamoto and Kagoshima, capped per person.</p>
         <p className="mt-2 max-w-2xl text-base leading-relaxed text-muted sm:text-lg">
-          Enter your booking. You get the discount, what you pay, and whether your dates and booking channel qualify in all seven prefectures. {kagoshimaOpen ? "Kagoshima (60% off) sales opened October 14, 2026, for nights to January 31 (February 28 when booked direct)." : "Kagoshima sales open October 14."}
+          This free Kyushu travel discount calculator (checker) takes your booking and gives the discount, what you pay, and whether your dates and booking channel qualify in all seven prefectures. {kagoshimaOpen ? "Kagoshima (60% off) sales opened October 14, 2026, for nights to January 31 (February 28 when booked direct)." : "Kagoshima sales open October 14."}
           {nextOpening && (
             <>
               {" "}
